@@ -1,6 +1,5 @@
 (ns zombieclj.game-test
   (:require [clojure.test :refer [deftest is testing]]
-            [zombieclj.game :as game]
             [zombieclj.game :as sut]))
 
 (def example (assoc game/initial-game :seed 0))
