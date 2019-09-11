@@ -1,0 +1,49 @@
+Sidestruktur
+--------------------------------------------------------------------------------
+
+.page
+  .surface
+    .skyline
+    .zombies
+    .dice-row
+
+Skyline
+--------------------------------------------------------------------------------
+
+.skyline
+  .building.building-X    [0-15]
+
+Zombies
+--------------------------------------------------------------------------------
+
+.zombies
+  .zombie-position        [per zombie]
+    .zombie.zombie-X      [forskjellige utseende, 1-8]
+      .zombie-health
+        .heart            [per liv] .lost
+
+Dice row
+--------------------------------------------------------------------------------
+
+.dice-row
+  .die-w-lock             [per terning]
+  .dice-spacing           [mellom terninger]
+  .rolls
+    .roll                 .rolling .used
+
+Die w lock
+--------------------------------------------------------------------------------
+
+.die-w-lock
+  .die                    .rolling .highlighted
+    .cube                 .facing-X or .roll-X-to-Y   [0-5]
+      .face.face-0.punch
+      .face.face-1.shield
+      .face.face-2.shovel
+      .face.face-3.punch
+      .face.face-4.heal
+      .face.face-5.skull
+  .clamp                  .locked
+    .lock
+      .padlock
+

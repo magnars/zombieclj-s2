@@ -1,0 +1,3 @@
+{:main zombieclj.client
+ :output-to "cljs-out/public/js/dev.js"
+ :output-dir "cljs-out/public/js/dev"}
